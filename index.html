@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Aljtas</title>
+  </head>
+  <body>
+    <!--Header--> 
+    <header class="hero" id="hero">
+      <div class="navbar" id="navbar">
+          <div class="logo" id="logo">
+            <a class="logo_link" href="#">
+              <img src="./img/Logo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="left_nav" id="left_nav">
+            <input type="checkbox" id="hamburder_checkbox">
+            <label class="menu_hamburger" for="hamburder_checkbox">
+              <span></span>
+            </label>
+            <ul class="left_nav_wrapper">
+              <li>
+                <a class="left_nav_wrapper_home" id="header_home" href="#">Home.</a>
+              </li>
+              <li>
+                <a class="left_nav_wrapper_about_us" id="header_about_us" href="#">About us.</a>
+              </li>
+              <li>
+                <a class="left_nav_wrapper_portfolio" id="header_portfolio" href="#portfolio_block">Portfolio.</a>
+              </li>
+              <li>
+                <a class="left_nav_wrapper_contact_us" id="header_contact_us"  href="#contact_form">Contact us.</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="right_nav" id="right_nav">
+            <div class="language_wrapper" id="language_wrapper">
+              <input type="checkbox" id="language_checkbox" onclick="arrowChange()">
+              <label class="language_list" for="language_checkbox">
+                <span id="language_actual">EN</span><span class="drop_arrow" id="drop_arrow">▼</span>
+              </label>
+                <div class="language">
+                  <input type="radio" name="en" id="en" onclick="changeLanguage()"><label id="en_language" for="en">EN</label>
+                  <input type="radio" name="ua" id="ua" onclick="changeLanguage()"><label id="ua_language" for="ua">UA</label>
+                  <input type="radio" name="ru" id="ru" onclick="changeLanguage()"><label id="ru_language" for="ru">RU</label>                
+              </div>
+            </div>
+            <div class="contact_us_wrapper" id="contact_us_wrapper">
+              <a class="contact_us_button" href="#contact_form">
+                    <p id="contact_us_button">Contact Us</p>
+                <span class="arrow">⟶</span>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="slider" id="slider">
+        <div class="item">
+          <div class="title" id="title">
+            <div class="title_title" id="title_title">
+              <h1 id="a3gw">Aljtas' 3D Graphic Works.</h1>
+            </div>
+            <p id="about_site">Think about this website as my pet-project. I created it to show myskills. All graphic works which were shown here, were created by me.</p>
+            <div class="title_button_form">
+              <div class="button_title" id="button_title">
+                <button id="button_button">More About us</button>
+              </div>
+              <div class="touch">
+                <a href="#" id="touch">Get in Touch.</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="illustration" id="illustration">
+            <img src="./img/illustration.png" alt="Illustration">
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+    </div>
+    </header>
+
+    
+    <!--Portfolio-->
+    <section class="portfolio_block" id="portfolio_block">
+      <h2 id="s_s_o_o_l_w">See some of our Last work.</h2>
+        <div class="img">
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0001.png" alt="image"  onclick="imageSize(1)">
+          </div>
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0002.png" alt="image"  onclick="imageSize(2)">
+          </div>
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0003.png" alt="image"  onclick="imageSize(3)">
+          </div>
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0004.png" alt="image"  onclick="imageSize(4)">
+          </div>
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0005.png" alt="image"  onclick="imageSize(5)">
+          </div>
+          <div class="portfolio_image"> 
+            <img src="./img/portfolio/display_0006.png" alt="image"  onclick="imageSize(6)">
+          </div>
+      </div>
+      <a class="more_of_there" id="more_of_there" href="#">See More of These.</a>
+    </section>
+    
+    
+    <!--Contact Form-->
+    <section class="contact_form" id="contact_form">
+        <p id="contact_contact_us">CONTACT US</p>
+        <h2 id="contact_touch">Get in Touch</h2>
+        <form action="" id="form">
+          <input type="email" name="email" id="email" value="" placeholder="Your email">
+          <input type="text" name="subject" id="subject" value="" placeholder="Message subject">
+          <textarea name="message" id="message" cols="30" rows="10"  placeholder="Your message here..."></textarea>
+        </form>
+        <div class="button" id="contact_button">
+          <button id="button_button_contact">Send Message</button>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer_block" id="footer_block">
+      <h4>Aljtas</h4>
+      <h2>CREATIVITY ABOVE</h2>
+      <ul class="menu_wrapper" id="menu">
+        <li>
+          <a class="menu_wrapper_home" id="footer_home" href="#">Home.</a>
+        </li>
+        <li>
+          <a class="menu_wrapper_about_us" id="footer_about_us" href="#">About us.</a>
+        </li>
+        <li>
+          <a class="menu_wrapper_portfolio" id="footer_portfolio" href="#">Portfolio.</a>
+        </li>
+        <li>
+          <a class="menu_wrapper_contact_us"  id="footer_contact_us" href="#contact_form">Contact us.</a>
+        </li>
+      </ul>
+      <span class="all_r" id="all_r"> © 2021 - Aljtas, All Right Reserved</span>
+      <ul class="social_icons" id="social_icons">
+        <li>
+          <a class="facebook" href="#">
+            <img src="./img/Facebook.png" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <img src="./img/Instagram.png" alt="Instagram">
+          </a>
+        </li>
+        <li>
+          <a class="pinterest" href="#">
+            <img src="./img/pinterest.png" alt="Pinterest">
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+
+    <!--Scripts-->
+    <script src="./js/test.js"></script>
+    <!--Scripts-->
+
+
+  </body>
+</html>
