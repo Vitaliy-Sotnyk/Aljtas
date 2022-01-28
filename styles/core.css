@@ -4,8 +4,8 @@
 
     --main-color: #336633;
     --white-color: rgb(255, 255, 255);
-    --second-color: #66ff00;
-    --second-color-hover: #58d604;
+    --second-color: rgba(89, 219, 3, 0.9);
+    --second-color-hover: rgb(81, 197, 3, 0.5);
 
     font-size: 18px;
     font-family: "Franklin Gothic";

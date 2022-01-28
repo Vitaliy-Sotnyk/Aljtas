@@ -49,7 +49,7 @@ function changeLanguage(){
     }
 }
 let englishText =['Aljtas\' 3D Graphic Works.', 
-'Think about this website as my pet-project. I created it to show myskills. All graphic works which were shown here, were created by me.',
+'Think about this website as my pet-project. I created it to show my skills. All graphic works which were shown here, were created by me.',
 'More About us', 'Get in Touch.', 
 'See some of our Last work.', 'See More of These.', 
 'Your email', 'Message subject', 'Your message here...', 'Send Message',
