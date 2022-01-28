@@ -215,7 +215,7 @@ function showImage(n){
 
     image[imageIndex-1].appendChild(imgClose);
     imgClose.classList.add('imgClose');
-    imgClose.src = '/img/cancel.png'
+    imgClose.src = './img/cancel.png'
     imgClose.style.zIndex = '3';
     imgClose.style.height ='40px';
     imgClose.style.width ='40px';
