@@ -124,7 +124,9 @@ function language(array){
     contactUs.innerHTML = array[13];
     footerContactUs.innerHTML = contactUs.innerHTML;
 
-    contactUsButton.innerHTML = contactUs.innerHTML
+    contactUsButton.innerHTML = contactUs.innerHTML;
+    contactContactUs.innerHTML = contactUs.innerHTML;
+    contactTouch.innerHTML = array[3];
 }
 
 /*----------Change language----------*/
