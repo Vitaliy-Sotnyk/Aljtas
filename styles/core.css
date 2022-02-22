@@ -7,9 +7,9 @@
     --second-color: rgba(89, 219, 3, 0.9);
     --second-color-hover: rgb(81, 197, 3, 0.5);
 
+    color: var(--main-color);
     font-size: 18px;
     font-family: "Franklin Gothic";
-    color: var(--main-color);
     font-weight: 500;
     font-stretch: ultra-expanded;
     line-height: 21px;
@@ -19,6 +19,9 @@
 a{
     text-decoration: none;
     white-space: nowrap;
+}
+a:hover{
+    text-shadow: rgb(155, 155, 155) 1px 0 10px;
 }
 
 li{

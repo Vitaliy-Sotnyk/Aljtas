@@ -13,9 +13,9 @@ footer{
     margin-top: 50px;
 }
 .footer_block h2{
-    text-align: center;
     color: var( --second-color); 
     margin-top: 14px;
+    text-align: center;
 }
 .footer_block ul{
     justify-content: center;

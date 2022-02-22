@@ -13,8 +13,8 @@
 .contact_form form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 55px;
     grid-gap: 1.5em;
+    padding-top: 55px;
 }
 .contact_form input, .contact_form textarea{
     padding: 20px 20px 30px;

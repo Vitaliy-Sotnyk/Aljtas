@@ -14,16 +14,17 @@
     grid-gap: 1.5em;
 }
 .portfolio_block img{
-    width: 100%;
-    height: auto;
+    border-radius: 5px;
     box-shadow: 0px 7px 10px 0px rgba(25, 45, 51, 0.45);
+    height: auto;
+    width: 100%;
     z-index: 1;
 }
-.portfolio_block .more_of_there{
+.portfolio_block .more_of_there{  
+    color: var(--second-color);
+    justify-content: center;
     padding-top: 55px;
     text-align: center;
-    justify-content: center;
-    color: var(--second-color);
 }
 @media(max-width:1024px){
     .portfolio_block .img{
